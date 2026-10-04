@@ -74,6 +74,7 @@ nav ul a:hover{color:#fff}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:18px 14px}
 .fact b{display:block;font-family:var(--serif);font-size:2rem;font-weight:500;line-height:1;color:#fff}
 .fact span{font-size:.8rem;color:#B6C8B0;line-height:1.3;display:block;margin-top:6px}
+.stack{display:grid;gap:14px}.stack div{display:grid;grid-template-columns:84px 1fr;gap:10px;align-items:baseline}.stack dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--moss-300)}.stack dd{margin:0;font-size:.92rem;color:#E4EEDF}
 .ndvi{margin-top:24px;padding-top:20px;border-top:1px solid rgba(157,191,143,.2)}
 .ndvi .bar{height:10px;border-radius:6px;background:linear-gradient(90deg,#8C5A2B,#C9A24A,#E3D98A,#9DC46B,#4F8F3F,#1E5A2E)}
 .ndvi .lab{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.68rem;color:#9FB59A;margin-top:8px}
@@ -88,6 +89,7 @@ nav ul a:hover{color:#fff}
 .tl:before{content:"";position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--moss-500)}
 .tl.now:before{background:var(--ochre);border-color:var(--ochre);box-shadow:0 0 0 5px rgba(201,138,43,.2)}
 .tl .tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--moss-500);text-transform:uppercase}
+.tl.dot:before{background:var(--ochre);border-color:var(--ochre);box-shadow:0 0 0 5px rgba(201,138,43,.2)}
 .tl.now .tag{color:var(--ochre-dark)}
 .tl h3{font-size:1.3rem;margin:.25rem 0 .4rem;color:var(--forest-900)}
 .tl p{color:var(--ink-soft);max-width:64ch}
@@ -171,9 +173,9 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
       <div class="eyebrow">AgTech · GIS &amp; Dados Espaciais · Python &amp; Automação</div>
       <h1>Poliana<br><em>Betella</em></h1>
       <p class="sub">Analista Sênior de Geoprocessamento · Doutoranda no ITA · Co-founder da Ibiraté</p>
-      <p class="desc">Trabalho com geoprocessamento, dados e automação no agronegócio. Gosto de entender o processo e desenhar o fluxo antes de escolher a ferramenta, buscando desempenho, qualidade e menos retrabalho. Minha base é em manejo de bacias hidrográficas e legislação ambiental.</p>
+      <p class="desc">Trabalho com geoprocessamento, dados e automação no agronegócio, incluindo monitoramento agrícola e identificação de culturas por satélite. Gosto de entender o processo e desenhar o fluxo antes de escolher a ferramenta, buscando desempenho, qualidade e menos retrabalho. Minha formação em ciências agrárias, com manejo de bacias hidrográficas e legislação ambiental, me dá o contexto do campo.</p>
       <div class="chips">
-        <span class="chip">Alta Performance</span><span class="chip">Qualidade &amp; Otimização</span><span class="chip">Fluxos &amp; Pipelines</span><span class="chip">Banco de Dados</span><span class="chip">Dashboards &amp; Métricas</span><span class="chip">Automação em Python</span><span class="chip">Sensoriamento Remoto</span><span class="chip">Legislação Ambiental</span>
+        <span class="chip">Monitoramento Agrícola</span><span class="chip">Identificação de Culturas</span><span class="chip">Sensoriamento Remoto</span><span class="chip">Google Earth Engine</span><span class="chip">Dados &amp; Pipelines</span><span class="chip">Automação em Python</span><span class="chip">IA Aplicada</span><span class="chip">Alta Performance</span>
       </div>
       <div class="cta">
         <a class="btn primary" href="#projetos">Ver projetos</a>
@@ -181,13 +183,13 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
       </div>
     </div>
     <aside class="panel" aria-label="Resumo">
-      <h3>Em resumo</h3>
-      <div class="facts">
-        <div class="fact"><b>Sênior</b><span>analista de geoprocessamento</span></div>
-        <div class="fact"><b>ITA</b><span>doutorado em andamento</span></div>
-        <div class="fact"><b>3</b><span>plugins QGIS em código aberto</span></div>
-        <div class="fact"><b>2</b><span>protótipos interativos públicos</span></div>
-      </div>
+      <h3>Stack</h3>
+      <dl class="stack">
+        <div><dt>Geo</dt><dd>QGIS · PyQGIS · ArcGIS</dd></div>
+        <div><dt>Satélites</dt><dd>Sentinel · Google Earth Engine · SATVeg</dd></div>
+        <div><dt>Dados</dt><dd>Banco de dados · Pipelines · Dashboards</dd></div>
+        <div><dt>Código</dt><dd>Python · JavaScript · APIs · IA</dd></div>
+      </dl>
       <div class="ndvi">
         <div class="bar"></div>
         <div class="lab"><span>solo exposto</span><span>NDVI</span><span>vegetação densa</span></div>
@@ -211,7 +213,7 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
         <h3>ITA — Instituto Tecnológico de Aeronáutica</h3>
         <p>Doutorado em andamento.</p>
       </div>
-      <div class="tl">
+      <div class="tl dot">
         <div class="tag">Co-founder</div>
         <h3>Ibiraté Consultoria</h3>
         <p>Consultoria ambiental e desenvolvimento de ferramentas próprias de análise de conformidade (Código Florestal).</p>
@@ -258,13 +260,13 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
       </article>
       <article class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
-        <h3>Monitoramento agrícola por satélite</h3>
-        <p>Identificação de culturas, estágios fenológicos, riscos e avanço de colheita com imagens Sentinel e diferentes composições de bandas, em períodos de alta demanda.</p>
+        <h3>Monitoramento agrícola &amp; identificação de culturas</h3>
+        <p>Identificação de culturas, estágios fenológicos, riscos e avanço de colheita com imagens de satélite (Sentinel, Google Earth Engine) e diferentes composições de bandas.</p>
       </article>
       <article class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.2 6 10.5A6 6 0 0 1 6 13.5C6 9.2 12 3 12 3z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
-        <h3>Bacias hidrográficas &amp; legislação ambiental</h3>
-        <p>Base técnica e jurídica em recursos hídricos e no Código Florestal (Lei 12.651/12): APP, nascentes, uso consolidado, CAR e regularização de imóveis rurais.</p>
+        <h3>Ciências agrárias &amp; legislação ambiental</h3>
+        <p>Formação em ciências agrárias, com manejo de bacias hidrográficas e Código Florestal (Lei 12.651/12) como contexto técnico: APP, nascentes, uso consolidado e CAR.</p>
       </article>
     </div>
   </div>
@@ -323,11 +325,11 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
     <h2>Ferramentas &amp; áreas</h2>
     <div class="grid4">
       <div class="skill"><div class="bar"></div><h3>Geoprocessamento</h3><p>QGIS, PyQGIS, ArcGIS, modelos em ambiente GIS, análise espacial aplicada ao Código Florestal.</p></div>
-      <div class="skill"><div class="bar"></div><h3>Sensoriamento Remoto</h3><p>Sentinel, composições de bandas, séries temporais de NDVI, plataformas SATVeg/Embrapa.</p></div>
+      <div class="skill"><div class="bar"></div><h3>Sensoriamento Remoto</h3><p>Satélites (Sentinel), Google Earth Engine, composições de bandas, séries temporais de NDVI, SATVeg/Embrapa.</p></div>
       <div class="skill"><div class="bar"></div><h3>Dados &amp; Pipelines</h3><p>Banco de dados, estruturação de dados, dashboards e métricas de desempenho.</p></div>
       <div class="skill"><div class="bar"></div><h3>Python &amp; Automação</h3><p>Plugins QGIS, scripts de automação, integração com APIs.</p></div>
-      <div class="skill"><div class="bar"></div><h3>IA &amp; Machine Learning</h3><p>Modelos de linguagem (Gemini) e aprendizado de máquina aplicados a tarefas técnicas de geoprocessamento.</p></div>
-      <div class="skill"><div class="bar"></div><h3>Bacias &amp; Legislação</h3><p>Manejo de bacias hidrográficas, recursos hídricos, licenciamento, CAR, ITR e Lei 12.651/12.</p></div>
+      <div class="skill"><div class="bar"></div><h3>IA Aplicada</h3><p>Modelos de linguagem (Gemini) e aprendizado de máquina aplicados a tarefas técnicas de geoprocessamento.</p></div>
+      <div class="skill"><div class="bar"></div><h3>Ciências Agrárias</h3><p>Manejo de bacias hidrográficas, recursos hídricos, licenciamento, CAR, ITR e Lei 12.651/12.</p></div>
       <div class="skill"><div class="bar"></div><h3>Gestão de projetos</h3><p>Priorização com RICE, gestão de backlog e metrificação de tempo e custo.</p></div>
       <div class="skill"><div class="bar"></div><h3>Treinamento</h3><p>Manuais, guias de boas práticas e onboarding de novos analistas.</p></div>
     </div>
