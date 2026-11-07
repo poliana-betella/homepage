@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Poliana Betella · Geoprocessamento, Dados e Automação</title>
-<meta name="description" content="Analista Sênior de Geoprocessamento e doutoranda no ITA. Dados, automação e legislação ambiental para o agro.">
+<meta name="description" content="Engenheira Florestal (MSc, UNESP), doutoranda em Pesquisa Operacional no ITA e co-founder da Ibiraté. Geoprocessamento, dados, automação e legislação ambiental para o agro.">
 <meta name="theme-color" content="#0F2A1D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,6 +50,7 @@ nav ul{list-style:none;padding:0;display:flex;gap:28px}
 nav ul a{color:#C9D8C4;text-decoration:none;font-size:.9rem;transition:color .2s}
 nav ul a:hover{color:#fff}
 @media(max-width:720px){nav ul{gap:14px}nav ul a{font-size:.78rem}.brand span{display:none}}
+@media(max-width:440px){nav ul{gap:10px}nav ul a{font-size:.72rem}}
 
 /* HERO */
 .hero{position:relative;background:radial-gradient(1200px 600px at 80% 0%,#1E4D35 0%,var(--forest-900) 55%,var(--forest-950) 100%);color:#fff;overflow:hidden;padding:104px 0 112px}
@@ -95,7 +96,7 @@ nav ul a:hover{color:#fff}
 .tl p{color:var(--ink-soft);max-width:64ch}
 
 /* ATUAÇÃO */
-#atuacao{background:var(--sage-50);border-block:1px solid var(--line)}
+#atuacao,#publicacoes{background:var(--sage-50);border-block:1px solid var(--line)}
 .note{margin-top:18px;padding:14px 18px;border-left:3px solid var(--ochre);background:#fff;border-radius:0 10px 10px 0;font-size:.92rem;color:var(--ink-soft);max-width:70ch}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
@@ -160,6 +161,7 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
       <li><a href="#historia">Trajetória</a></li>
       <li><a href="#atuacao">Atuação</a></li>
       <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#publicacoes">Publicações</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
@@ -170,12 +172,12 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
   <svg class="topo" id="topo" aria-hidden="true" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1200 700"></svg>
   <div class="wrap">
     <div>
-      <div class="eyebrow">AgTech · GIS &amp; Dados Espaciais · Python &amp; Automação</div>
+      <div class="eyebrow">AgTech · GIS &amp; Dados Espaciais · Python &amp; Automação · Pesquisa Operacional</div>
       <h1>Poliana<br><em>Betella</em></h1>
-      <p class="sub">Analista Sênior de Geoprocessamento · Doutoranda no ITA · Co-founder da Ibiraté</p>
-      <p class="desc">Trabalho com geoprocessamento, dados e automação no agronegócio, incluindo monitoramento agrícola e identificação de culturas por satélite. Gosto de entender o processo e desenhar o fluxo antes de escolher a ferramenta, buscando desempenho, qualidade e menos retrabalho. Minha formação em ciências agrárias, com manejo de bacias hidrográficas e legislação ambiental, me dá o contexto do campo.</p>
+      <p class="sub">Engenheira Florestal (MSc, UNESP) · Doutoranda em Pesquisa Operacional no ITA · Co-founder da Ibiraté</p>
+      <p class="desc">Sou especialista em geoprocessamento, dados e automação aplicados ao agronegócio, incluindo monitoramento agrícola e identificação de culturas por satélite. Gosto de entender o processo e desenhar o fluxo antes de escolher a ferramenta, buscando desempenho, qualidade e menos retrabalho. Minha formação em ciências agrárias, com manejo de bacias hidrográficas e legislação ambiental, me dá o contexto do campo.</p>
       <div class="chips">
-        <span class="chip">Monitoramento Agrícola</span><span class="chip">Identificação de Culturas</span><span class="chip">Sensoriamento Remoto</span><span class="chip">Google Earth Engine</span><span class="chip">Dados &amp; Pipelines</span><span class="chip">Automação em Python</span><span class="chip">IA Aplicada</span><span class="chip">Alta Performance</span>
+        <span class="chip">Monitoramento Agrícola</span><span class="chip">Identificação de Culturas</span><span class="chip">Sensoriamento Remoto</span><span class="chip">Google Earth Engine</span><span class="chip">Dados &amp; Pipelines</span><span class="chip">Automação em Python</span><span class="chip">IA Aplicada</span><span class="chip">Pesquisa Operacional</span><span class="chip">Alta Performance</span>
       </div>
       <div class="cta">
         <a class="btn primary" href="#projetos">Ver projetos</a>
@@ -204,14 +206,19 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
     <h2>Formação &amp; caminho</h2>
     <div class="timeline">
       <div class="tl now">
-        <div class="tag">Atual</div>
-        <h3>Geotecnologia no agronegócio</h3>
-        <p>Analista sênior de geoprocessamento em uma empresa do setor, à frente de automação, estruturação de dados e priorização de projetos técnicos.</p>
+        <div class="tag">Doutorado · Atual</div>
+        <h3>Pesquisa Operacional — ITA</h3>
+        <p>Doutorado em andamento em Pesquisa Operacional no Instituto Tecnológico de Aeronáutica (ITA).</p>
       </div>
-      <div class="tl now">
-        <div class="tag">Doutorado</div>
-        <h3>ITA — Instituto Tecnológico de Aeronáutica</h3>
-        <p>Doutorado em andamento.</p>
+      <div class="tl dot">
+        <div class="tag">Publicação · 2026</div>
+        <h3>Ciência Florestal (UFSM)</h3>
+        <p>Coautora da nota técnica “Recomposição de APPs em áreas consolidadas em nascentes: uma contradição legal”. <a href="#publicacoes">Ver publicação</a></p>
+      </div>
+      <div class="tl dot">
+        <div class="tag">Especialidade</div>
+        <h3>Geotecnologia no agronegócio</h3>
+        <p>Automação, estruturação de dados, monitoramento agrícola e priorização de projetos técnicos aplicados ao agro.</p>
       </div>
       <div class="tl dot">
         <div class="tag">Co-founder</div>
@@ -232,7 +239,7 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
     <div class="eyebrow">Atuação profissional</div>
     <h2>Como eu trabalho</h2>
     <p class="lead">Começo pelo processo: entendo o fluxo, defino o que medir e só depois escolho a ferramenta. O objetivo é ganhar desempenho e qualidade com menos retrabalho.</p>
-    <p class="note">Parte relevante do meu trabalho acontece dentro de empresas do agronegócio e não pode ser detalhada publicamente — os pontos abaixo descrevem o tipo de problema que resolvo, não os sistemas específicos.</p>
+    <p class="note">Parte relevante do meu trabalho foi desenvolvida em projetos privados e não pode ser detalhada publicamente — os pontos abaixo descrevem o tipo de problema que resolvo, não os sistemas específicos.</p>
 
     <div class="grid3">
       <article class="card">
@@ -244,7 +251,7 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
       <article class="card">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
         <h3>Banco de dados &amp; priorização</h3>
-        <p>Vinculei a geração de listas de atividades ao banco de dados da empresa e apliquei um framework de priorização (RICE — Alcance, Impacto, Confiança, Esforço) para ordenar o backlog técnico por valor gerado.</p>
+        <p>Vinculo a geração de listas de atividades a bancos de dados e aplico um framework de priorização (RICE — Alcance, Impacto, Confiança, Esforço) para ordenar o backlog técnico por valor gerado.</p>
         <a class="more" href="https://poliana-betella.github.io/gestao-sessoes-rice-demo/">Ver protótipo →</a>
       </article>
       <article class="card">
@@ -276,7 +283,7 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
   <div class="wrap">
     <div class="eyebrow">Projetos</div>
     <h2>Ferramentas, protótipos e sites</h2>
-    <p class="lead">O que posso compartilhar abertamente — uma amostra do trabalho interno, adaptada para uso público.</p>
+    <p class="lead">O que posso compartilhar abertamente — uma amostra do meu trabalho, adaptada para uso público.</p>
 
     <div class="grid2">
       <article class="proj">
@@ -297,6 +304,18 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
         <div class="tags"><span>Python</span><span>Sensoriamento Remoto</span><span>NDVI</span></div>
         <a class="more" href="https://github.com/poliana-betella/agroanalytica-ndvi">Ver repositório →</a>
       </article>
+      <article class="proj">
+        <h3>QuickSentinel</h3>
+        <p>Plugin QGIS que busca e baixa imagens Sentinel-2 (Copernicus Data Space) com composições prontas — cor real, falsa cor e NDVI — e download em paralelo.</p>
+        <div class="tags"><span>Python</span><span>Sentinel-2</span><span>Sensoriamento Remoto</span></div>
+        <a class="more" href="https://github.com/poliana-betella/QuickSentinel">Ver repositório →</a>
+      </article>
+      <article class="proj">
+        <h3>BatchProcessor</h3>
+        <p>Plugin QGIS de produtividade: operações geométricas em lote, validação/QC com preview categorizado e ponte para ferramentas externas (inclusive via WSL).</p>
+        <div class="tags"><span>Python</span><span>PyQGIS</span><span>Automação</span></div>
+        <a class="more" href="https://github.com/poliana-betella/BatchProcessor-QGIS-Plugin">Ver repositório →</a>
+      </article>
       <article class="proj demo">
         <h3>captacao-documentos-demo</h3>
         <p>Protótipo interativo de um sistema de captação automática de documentos: formulário que alimenta um banco de dados pesquisável, sem digitação manual. Recriação genérica, dados fictícios.</p>
@@ -314,6 +333,24 @@ footer{background:var(--forest-950);color:#8FA58A;text-align:center;padding:26px
         <p>Site institucional e landing pages da Ibiraté Consultoria Ambiental, desenvolvidos por mim.</p>
         <div class="tags"><span>Web</span><span>Landing pages</span><span>Marca</span></div>
         <a class="more" href="https://ibirate.com.br/">Visitar o site →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="publicacoes">
+  <div class="wrap">
+    <div class="eyebrow">Publicações</div>
+    <h2>Artigos &amp; notas técnicas</h2>
+    <div class="grid2">
+      <article class="proj">
+        <h3>Ciência Florestal · 2026</h3>
+        <p><strong>Recomposição de APPs em áreas consolidadas em nascentes: uma contradição legal</strong><br>
+        Nota técnica que discute a diferença entre o raio fixo de 15 m de recomposição em nascentes e as faixas maiores exigidas ao longo dos cursos d’água em imóveis acima de 4 módulos fiscais (art. 61-A da Lei 12.651/2012), e propõe uma interpretação sistemática que trata a nascente como parte do curso d’água.</p>
+        <p style="flex:0;font-size:.86rem;margin-top:.6rem">BETELLA, P. M. C.; ZAKIA, M. J. B.; PRADO, M. F.; GOMES, P. C. B. <em>Ciência Florestal</em>, Santa Maria, v. 36, e92205, 2026. DOI: <a href="https://doi.org/10.5902/1980509892205">10.5902/1980509892205</a></p>
+        <div class="tags"><span>Código Florestal</span><span>APP</span><span>Nascentes</span><span>Acesso aberto</span></div>
+        <a class="more" href="https://periodicos.ufsm.br/cienciaflorestal/article/view/92205">Ler o artigo →</a>
+        <a class="more" href="https://ibirate.com.br/artigo-app-nascentes-ciencia-florestal/" style="margin-top:.4rem">Resumo no site da Ibiraté →</a>
       </article>
     </div>
   </div>
